@@ -1,0 +1,61 @@
+create user Shopping identified by Shopping account unlock ;
+
+-- 각종 권한(뭔가 할수 있는 능력) 주기
+grant connect, resource to Shopping ;
+
+-- 테이블 생성, 시퀀스 생성 권한 부여
+grant create table, create sequence to Shopping ;
+
+Shopping/Shopping
+
+> 고객센터
+	1:1 상담 관련 DB
+	
+create sequence counselseq
+create table Counsels
+(
+num number primary key,
+id varchar2(20),
+email varchar2(30),
+tel varchar2(14),
+writer varchar2(20),
+content varchar(300),
+category varchar(16)
+);
+
+>회원관련
+	회원가입
+	
+>이벤트
+create sequence eventseq;
+create table events
+(
+num number primary key,
+writer varchar2(100),
+name varchar(50),
+content varchar2(600),
+today date
+);
+
+1:1문의 의 대한 답변글을 저장할 Table (num값을 이용하여 Join 예정)
+create table Inquirys
+(
+num number,
+id varchar2(40),
+tel varchar2(20),
+writer varchar2(100),
+content varchar2(600),
+email varchar2(200),
+category varchar2(30)
+);
+
+공지사항
+create sequence announcementseq;
+create table announcements
+(
+num number primary key,
+writer varchar2(100),
+name varchar(50),
+content varchar2(600),
+today date
+);

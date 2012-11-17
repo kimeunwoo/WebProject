@@ -1,0 +1,23 @@
+.submenu{ display:none;}
+.menubar{ border:0px; font-size:20pt;}
+.submenuLeft{ display:none;}
+.menubarLeft{ border:0px; font-size:20pt;}
+
+.subinquire{ display:none;}
+.inquire{ border:0px;}
+
+#CustomerText{ font-size:15pt; };
+
+#sign{font-size:8pt;} 
+
+A:link {text-decoration:none;color:#696969}
+A:hover{text-decoration:yes;color:#66CCFF}
+A:visited {text-decoration:none;color:#330066}
+A{font-family:"±¼¸²";}
+INPUT{font-family:"±¼¸²";}
+TABLE{font-family:"±¼¸²";}
+TR{font-family:"±¼¸²";}
+TD{font-family:"±¼¸²";}
+BODY{font-family:"±¼¸²";}
+FOREM{font-family:"±¼¸²";}
+TH{font-family:"±¼¸²";}

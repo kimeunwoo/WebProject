@@ -1,0 +1,39 @@
+
+drop table signups purge ;
+create sequence Signseq
+increment by 1
+start with 1 ;
+
+create table signups(
+	num number(8,2),
+	id varchar2(16)not null,
+	name varchar2(20) not null,
+	jumin1 varchar2(20)not null,
+	jumin2 varchar2(20)not null,
+	passwd varchar(30) not null,
+	postcode1 varchar(10)not null,
+	postcode2 varchar(10)not null,
+	address1 varchar(100)not null,
+	address2 varchar(100)not null,
+	tel1 varchar(10),
+	tel2 varchar(10),
+	tel3 varchar(10),
+	pone1 varchar(10)not null,	
+	pone2 varchar(10)not null,
+	pone3 varchar(10)not null,	
+	email1 varchar2(50),
+	email2 varchar2(50),
+	category varchar2(30),
+	representative varchar2(20),
+	permitNumber1 varchar2(7),
+	permitNumber2 varchar2(5),
+	permitNumber3 varchar2(13)
+);
+
+commit;
+
+alter table signups add primary key(id, jumin2) ;
+
+
+insert into signups(num,name,jumin1,jumin2,id,passwd,postcode1,postcode2,address1,address2,tel1,tel2,tel3,pone1,pone2,pone3,email1,email2,category)
+values(signseq.nextval,'관리자','111111','1111111','shopping','shopping','111','111','서울시 종로구 종로5가','85-3번지','02','123','1234','010','123','1234','abc','naver.com','관리자');

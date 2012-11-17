@@ -1,0 +1,16 @@
+<Context>
+	<Resource name="jdbc/OracleDB"
+		auth="Container"						
+		type="javax.sql.DataSource"				
+		driverClassName="oracle.jdbc.driver.OracleDriver"
+		loginTimeout="10"		
+		maxWait="5000"
+		username="shopping"					
+		password="shopping"					
+		testOnBorrow="true"
+		factory="org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory"
+		url="jdbc:oracle:thin:@localhost:1521:xe"
+		maxActive="500"
+		maxldle="100"
+	/>
+</Context>

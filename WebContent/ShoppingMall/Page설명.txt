@@ -1,0 +1,62 @@
+WPBottom.jsp											: 하단 페이지
+WPCenter.jsp											: 내용 페이지 1
+WPCenter2.jsp										: 내용 페이지 2
+WPControl.jsp											: 템플릿 흐름 제어 페이지
+WPEvent.jsp											: 이벤트 페이지
+WPLeft.jsp												: 왼쪽 메뉴 페이지(일반사용사항)
+WPSignUpFrom_BusinessOperator.jsp	: 회원가입 - 사업자
+WPSignUpFrom.jsp									: 회원가입 - 일반 사용자
+WPSignUpSelect.jsp								: 회원가입 - 사용자, 일반 사용자 선택
+WPSubBoard.jsp										: 게시판 최근글 5개만 Main페이지에 표시할 페이지
+WPSubNotice.jsp										: 공지사항 최근글 5개만 Main페이지에 표시할 페이지
+WPTemple.jsp											: 템플릿 페이지(분활 된 페이지 통합), 메인페이지
+WPTop.jsp												: 상단 페이지
+WPLeft_CustomerCenter.jsp					: 왼쪽 메뉴 페이지(고객센터 사항)
+WPCustomerCenter.jsp							: 고객센터 메인 페이지
+WPBoardList.jsp										: 커뮤니티 내용출력 페이지
+WPFAQ.jsp												: FAQ 메인 페이지
+WPOne&OneCounsel.jsp						: 1:1상담 메인페이지
+WPShoppingBag.jsp								: 장바구니 메인페이지
+WPAllCommodityCenter.jsp						: 모든 상품정보 한번에 보기위한 페이지
+WPCheckCounsel.jsp								: 1:1문의 등록시 출력되는 페이지
+WPLeft_Accessory.jsp							: 악세사리 클릭시 왼쪽메뉴 악세사리 종류 표시를위한 페이지
+WPLeft_Costume.jsp								: 의류 클릭시 왼쪽메뉴 의류 종류 표시를 위한 페이지
+WPLeft_Shoes.jsp									: 신발 클릭시 왼쪽메뉴 신발 종류 표시를 위한 페이지
+WPOrderCommodityList.jsp						: 주문내역 페이지
+WPEventInsertFrom.jsp							: 이벤트 글 등록
+WPLoginForm.jsp									: 로그인 창
+WPManagerPage.jsp								: 관리자 페이지
+WPLeft_Manager.jsp								: 관리자 페이지 왼쪽 메뉴
+WPSellerPage.jsp									: 판매자 페이지
+WPLeft_Seller.jsp									: 판매자 페이지 왼쪽 메뉴
+WPCommonMatters.jsp							: 공지사항 페이지
+WPCommunity.jsp									: 커뮤니티 페이지
+WPMemberDrop.jsp								: 회원탈퇴 페이지
+WPMyPage2.jsp										: 마이페이지 내용 상세
+WPUpdateok.jsp										: 회원정보 수정 완료
+WPZipCheck.jsp										: 우편번호 처리 페이지
+WPSignOk.jsp										:
+WPSignFail.jsp										:
+WPSearchPassWord.jsp							: 비밀번호 찾기 페이지
+WPSearchID.jsp										: 아이디 찾기 페이지
+WPOne&OneLists.jsp								: 1:1문의 보기 페이지(관리자 전용)
+WPMemberManager.jsp							: 회원관리 페이지(관리자 전용)
+WPLoginOut.jsp										: 로그아웃 처리 페이지
+WPInsertEvent.jsp									: 이벤트 글없을시 작성 페이지 
+WPInsertAnnouncement.jsp						: 공지사항 등록 페이지
+WPEventUpdate.jsp									: 이벤트 수정 페이지
+WPEventInsertFrom.jsp							: 이벤트 등록 페이지
+WPEventContent.jsp								: 이벤트 글 상세내용 보기 페이지
+WPDetailOne&One.jsp							: 1:1문의내용 상세보기 페이지
+WPDetailMember.jsp								: 회원 내용 상세보기 페이지
+
+
+style.css													: 스타일 지정을 모아둔 페이지
+script.js													: 스크립트를 모아둔 페이지
+Folder - images										: 사용 할 이미지를 모아둔 폴더
+Folder - Sub												: 임시로 저장된 폴더
+
+
+DB정보
+ID : shopping
+PW : shopping
