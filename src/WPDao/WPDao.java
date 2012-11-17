@@ -76,8 +76,8 @@ public class WPDao
 	public int insertDate(WPSignBean bean) {
 		Connection con = null;
 		PreparedStatement pstmt= null;
-		String sql = "insert into signups(num,name,jumin1,jumin2,id,passwd,postcode1,postcode2,address1,address2,tel1,tel2,tel3,pone1,pone2,pone3,email1,email2,category) ";
-		sql += "values(signseq.nextval,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+		String sql = "insert into signups(num,name,jumin1,jumin2,id,passwd,postcode1,postcode2,address1,address2,tel1,tel2,tel3,pone1,pone2,pone3,email1,email2,category, permitNumber1, permitNumber2, permitNumber3,representative) ";
+		sql += "values(signseq.nextval,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
 		
 		try {
@@ -104,6 +104,10 @@ public class WPDao
 			pstmt.setString(16, bean.getEmail1());
 			pstmt.setString(17, bean.getEmail2());
 			pstmt.setString(18, bean.getCategory());
+			pstmt.setString(19, bean.getPermitNumber1());
+			pstmt.setString(20, bean.getPermitNumber2());
+			pstmt.setString(21, bean.getPermitNumber3());
+			pstmt.setString(22, bean.getRepresentative());
 			
 			int cnt = pstmt.executeUpdate();
 			con.commit();

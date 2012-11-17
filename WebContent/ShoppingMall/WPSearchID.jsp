@@ -2,15 +2,18 @@
     pageEncoding="EUC-KR"%>
 <script type="text/javascript">
 <link href="style.css" rel="stylesheet" type="text/css">
-	function jumincheck(){
-	if(document.myform.jumin1.value >= 1 && document.myform.jumin1.value <6){
-		alert("주민등록번호를 정확히 입력하세요.");
-		document.myform.jumin1.focus();
-		return false;
-	}	
 
+
+	function CheckJumin(){
+	if(document.myform.name.value == ""){
+		alert("이름을 입력하세요.");
+		document.myform.name.focus();
+		return false;
+	}
 }
+	
 </script>
+
 
 <% String appth  = request.getContextPath(); %>
 <% String id =(String) request.getAttribute("id"); 
@@ -33,7 +36,7 @@
 		if(id==null){
 	%>
 		
-		<input type="submit" value="확인" onclick="return jumincheck();">		
+		<input type="submit" value="확인" onclick="return CheckJumin();">		
 	<%
 		}
 	%>

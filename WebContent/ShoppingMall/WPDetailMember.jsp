@@ -13,7 +13,7 @@
 %>
 
 <center><h2>${member.id}</h2>
-<form method="post" action="">
+<form method="post" action="<%=appth %>/login/WPdelete.do?id=${member.id}">
 	<table border="1" cellPadding="0" cellSpacing="3">
 		<tr>
 			<th width="130" height="35">이름</th>
@@ -65,9 +65,8 @@
 		
 		<tr>
 			<th height="35" colspan="2">
-				<input type="submit" value="회원 수정">
-				<input type="button" value="회원 삭제">
-				<input type="button" value="목록으로">
+				<input type="submit" value="회원 삭제">
+				<input type="button" value="목록으로" onclick="location='<%=appth %>/ShoppingMall/MembersLists.do'">
 			</th>
 		</tr>
 	</table>

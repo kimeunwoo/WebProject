@@ -85,17 +85,17 @@
 		var jumin2 = document.myform.jumin2.value.length;
 		
 	     if ((jumin1 + jumin2) != 13) 
-	     {   // 번호가 13개 아니라면
+	     {   
 	        alert("번호의 개수가 모자랍니다."); 
-	        document.myform.jumin1.focus(); //커서를 주민번호 앞자리에 놓는다.
+	        document.myform.jumin1.focus(); 
 	      return false;
 	     } 
 	     else 
 	     {   
-	        var strjumin = document.myform.jumin1.value + document.myform.jumin2.value;   //변수에 주민번호 앞자리 담음
+	        var strjumin = document.myform.jumin1.value + document.myform.jumin2.value;   
 	        
 	     }
-	        var a1=strjumin.substring(0,1)   //주민번호 계산법
+	        var a1=strjumin.substring(0,1)   
 	        var a2=strjumin.substring(1,2)          
 	        var a3=strjumin.substring(2,3)
 	        var a4=strjumin.substring(3,4)
@@ -147,7 +147,7 @@
 				<tr>
 					<th>*주민등록번호</th>
 					<td><input type="text" name="jumin1" maxlength="6" size="6"
-						value=""> - <input type="text" name="jumin2" maxlength="7"
+						value=""> - <input type="password" name="jumin2" maxlength="7"
 						size="7" value=""> &nbsp;&nbsp;<input type="button"
 						value="중복확인" onClick="jumin_Check()"></td>
 				</tr>

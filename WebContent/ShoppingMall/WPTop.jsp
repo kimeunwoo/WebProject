@@ -49,7 +49,7 @@
 			</tr>
 			
 			<%
-				if(category.equals("°ü¸®ÀÚ"))
+				if(id.equals("shopping"))
 				{
 			%>
 			<tr>

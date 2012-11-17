@@ -257,7 +257,7 @@ public class WPServlet extends HttpServlet
 			System.out.println("실패");
 		}
 		
-	}else if(command.equals("/login/WPdelete.do")){
+	}else if(command.equals("/login/WPdelete.do")){//회원탈퇴
 		
 		
 			WPSignBean bean = new WPSignBean();
@@ -268,8 +268,13 @@ public class WPServlet extends HttpServlet
 			
 			cnt = dao.deleteMember(bean);
 			
+			String id = request.getParameter("id");
 			if(cnt ==1){
-				viewPage="/ShoppingMall/login/WPMemberDrop.jsp";
+				
+				if(id.equals("shopping")){
+					viewPage="/ShoppingMall/login/WPMemberDrop.jsp";
+				}
+					viewPage="/ShoppingMall/MembersLists.do";
 			}else{
 				System.out.println("실패");
 			}
@@ -373,7 +378,7 @@ public class WPServlet extends HttpServlet
 			request.setAttribute("eventContent", bean);
 		}
 	}
-else if(command.equals("/ShoppingMall/searchId.do")){
+else if(command.equals("/ShoppingMall/searchId.do")){//아이디 찾기 
 		
 		String name = request.getParameter("name");
 		String jumin2 = request.getParameter("jumin2");
@@ -388,7 +393,7 @@ else if(command.equals("/ShoppingMall/searchId.do")){
 			
 		}
 		
-	}else if(command.equals("/ShoppingMall/searchpw.do")){
+	}else if(command.equals("/ShoppingMall/searchPw.do")){//비밀번호 찾기
 		String id = request.getParameter("id");
 		String jumin2 = request.getParameter("jumin2");
 		
